@@ -1,0 +1,11 @@
+Import('*')
+
+SimObject('TestMemory.py', sim_objects=['TestMemory'])
+SimObject('TestCache.py', sim_objects=['TestCache'])
+
+Source('test_memory.cc')
+Source('test_cache.cc')
+
+DebugFlag('TestMemory', "learning basic memory object structure")
+DebugFlag('TestCache', "learning basic memory object structure")
+DebugFlag('CacheInfo', "learning basic memory object structure")
